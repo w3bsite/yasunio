@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: posts
+  label: sidbar post dir
+  create: documents
+  match: "**/*"
+  templates:
+  - blog-post
 - type: document
   path: sd
   label: side doc
